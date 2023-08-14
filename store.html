@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>INTERPOL</title>
+    <link rel="stylesheet" type="text/css" href="storestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Section: Home -->
+        <section id="home-section" class="one">
+
+            <div class="text_1">
+                <P> MERCHANDISE </P>
+            </div>
+
+            <!-- Navbar -->
+            <div class="navbar">
+                <div class="hamburger-menu">
+                    <span class="hamburger-icon">&#9776;</span>
+                </div>
+                <div class="inter">
+                    <img src="images/interpol.png" alt="interpol">
+                </div>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="home.html#news">NEWS</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="home.html#contact">CONTACT</a></li>
+                    <li><a href="music.html">MUSIC</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+                <div class="new-navbar">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="home.html#news">NEWS</a></li>
+                        <li><a href="store.html">STORE</a></li>
+                        <li><a href="home.html#contact">CONTACT</a></li>
+                        <li><a href="music.html">MUSIC</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section: News -->
+        <section class="two">
+
+            <div class="store-image1">
+                <img src="images/music_store.jpg" alt="Music Store Image">
+            </div>
+
+            <div class="store-image2">
+                <img src="images/Jacket_store.jpg" alt="Music Store Image">
+            </div>
+
+            <div class="text_2">
+                <p>MUSIC</p>
+            </div>
+
+            <div class="text_3">
+                <p>JACKET</p>
+            </div>
+
+            <div>
+                <button class="custom-button" onclick="showRegistrationForm()">BUY</button>
+            </div>
+
+            <div>
+                <button class="custom-button2" onclick="showRegistrationForm()">BUY</button>
+            </div>
+
+            <!-- Image 1 -->
+
+            <div class="navbar-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/interpol"><img src="images/fb.jpg" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/interpol/"><img src="images/ig.jpg" alt="Instagram"></a></li>
+                    <li><a href="https://open.spotify.com/artist/3WaJSfKnzc65VDgmj2zU8B?si=sOkKN6q5T_uyDYeDKZkfHA"><img
+                                src="images/sp.jpg" alt="Spotify"></a></li>
+                    <li><a href="https://twitter.com/Interpol?s=20"><img src="images/tw.jpg" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="hamburger.js"></script>
+    <script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hamburger-menu').click(function () {
+                $('.navbar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

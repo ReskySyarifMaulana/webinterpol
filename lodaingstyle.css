@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading-container {
+    position: relative;
+    width: 40%;
+    height: 20px;
+}
+
+.loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    animation: loadingAnimation 4s;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Add fade-in transition for the body */
+body {
+    opacity: 0;
+    animation: fadeOut 4s;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 100;
+    }
+
+    0% {
+        opacity: 0;
+    }
+}
